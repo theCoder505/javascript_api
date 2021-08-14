@@ -55,11 +55,18 @@
 
     <br><br><br>
     <center>
-        <select name="" id="selectOption">
-		<option value="" id="optn1">Job Title</option>
-		<option value="" id="optn2">Job Location</option>
-		<option value="" id="optn3">The Other One</option>
-	</select>
+        <input type="text" name="" placeholder="Search By Job Title" id=""><br>
+        <label for="">Select Location: </label><br>
+        <select name="" id="">
+			<option value="">location1</option>
+			<option value="">location2</option>
+			<option value="">location3</option>
+			<option value="">location4</option>
+			<option value="">location5</option>
+		</select><br>
+        <input type="text" name="" placeholder="Salery Range" id=""><br>
+        <br>
+        <button id="search">Search</button>
     </center>
 
 
@@ -77,7 +84,7 @@
 
             $(document).ready(function() {
 
-                $("#selectOption").change(function() {
+                $("#search").change(function() {
 
                     $.ajax({
                         type: "GET",
@@ -130,4 +137,4 @@
     </script>
 </body>
 
-</html>
+</html> 
